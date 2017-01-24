@@ -28,14 +28,12 @@ $medium-screen: 400px !default;
 
 @for $i from 1 through 6 {
   h#{$i} {
-
-      
   //mobile
-      @include media ($medium-screen) {
-        $type-scale: $major-second;
+    $type-scale: $major-second;
       font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
 
-      }
+    
+
 
   //ipad
        @include media ($large-screen) {
