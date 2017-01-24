@@ -1,0 +1,59 @@
+
+// $golden:           1.618;
+// $minor-second:     1.067;
+// $major-second:     1.125;
+// $minor-third:      1.2;
+// $major-third:      1.25;
+// $perfect-fourth:   1.333;
+// $augmented-fourth: 1.414;
+// $perfect-fifth:    1.5;
+// $minor-sixth:      1.6;
+// $major-sixth:      1.667;
+// $minor-seventh:    1.778;
+// $major-seventh:    1.875;
+// $octave:           2;
+// $major-tenth:      2.5;
+// $major-eleventh:   2.667;
+// $major-twelfth:    3;
+// $double-octave:    4;
+
+
+// Breakpoints
+$xl-screen: 1200px !default;
+$large-screen: 780px !default;
+$medium-screen: 400px !default;
+
+
+
+
+@for $i from 1 through 6 {
+  h#{$i} {
+
+      
+  //mobile
+      @include media ($medium-screen) {
+        $type-scale: $major-second;
+      font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
+
+      }
+
+  //ipad
+       @include media ($large-screen) {
+         $type-scale: $minor-third;
+      font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
+
+      }
+  //hdi
+      @include media ($xl-screen) {
+     
+       $type-scale: $major-third;
+      font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
+
+      }
+    
+  }
+}
+
+p {
+  max-width:  $large-screen;
+}
