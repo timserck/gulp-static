@@ -162,9 +162,9 @@ gulp.task('svg', function() {
         }
     };
 
-    gulp.src('src/imgs/**/*.svg')
+    gulp.src('src/svg/**/*.svg')
         .pipe(svgSprite(configSVG))
-        .pipe(gulp.dest('dist/svg'));
+        .pipe(gulp.dest('dist/svg/'));
 
 });
 
