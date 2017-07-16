@@ -1,0 +1,31 @@
+$totalCols: 16;
+.grid {
+    position: relative;
+    @include clearfix;
+  
+  .row {
+    @include clearfix;
+  }
+    
+    [class*="col-"] {
+        float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px; 
+    position: relative;
+    }
+    
+    @for $i from 1 through $totalCols {
+    
+    .col-#{$i}-#{$totalCols} { 
+      width: 100%;
+      
+      @media screen and (min-width: 768px) 
+      {
+        width: 100% / $totalCols * $i;
+      }
+    }
+    }
+
+}
+

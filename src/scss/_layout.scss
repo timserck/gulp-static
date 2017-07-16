@@ -1,44 +1,8 @@
 @import "nav";
 @import "footer";
-@import "slider";
+html,
+body {
+    height: 100%;
 
-html, body{
-  height: 100%;
 }
-
-
-.content{
- @include outer-container($xl-screen);
-  padding:   0 $small-spacing;
-
-  .hero{
-    @include span-columns(12);
-    background: pink;
-
-  }
-  .headings,.paragraph{
-    background: red;
-
-      @include span-columns(12);
-
-        @include media ($large-screen) {
-      
-          @include span-columns(6);
-    }
-  
-  }
-   .paragraph{
-    background: green;
-    @include omega();
-  }
-
-  }//content
-
-  .last{
-    background: red;
-
-    @include span-columns(12);
-  }
-
-
 

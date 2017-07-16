@@ -1,0 +1,9 @@
+nav(role='navigation').grid.navigation
+	.navigation-wrap.row
+		div.navigation-wrap--inner.col-12-16
+			span.logo
+		
+		ul#js-navigation-menu.navigation-menu.navigation-wrap--inner.col-4-16.row.show
+			div.ham
+			each val in [5, 2, 3, 4]
+				li.col-4-16.nav-link: a(href='javascript:void(0)')= val

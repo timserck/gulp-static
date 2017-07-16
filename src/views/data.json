@@ -1,0 +1,31 @@
+{
+    "Data": {
+        "meta": {
+            "charset": "UTF-8",
+            "title": "test",
+            "description": "description",
+            "keywords": "test, test, test",
+            "author": "Timothée Serck"
+        },
+        "og": {
+            "title": "facebook",
+            "description": "faceDescription",
+            "img": "http://www.timotheeserck.be/projets/drSerck/imgs/icons/og_image.jpg",
+            "url": "http://www.timotheeserck.be/projets/drSerck/",
+            "facebook": {
+                "type": "website",
+                "local": "fr_FR"
+            },
+            "twitter": {
+                "card": "summary",
+                "creator": "@Serck_Timothee"
+            }
+
+        },
+        "iconsApp" : {
+        	"dos": "imgs/icons/favicons/"
+        }
+
+    }
+
+}

@@ -1,4 +1,3 @@
-
 // $golden:           1.618;
 // $minor-second:     1.067;
 // $major-second:     1.125;
@@ -16,42 +15,8 @@
 // $major-eleventh:   2.667;
 // $major-twelfth:    3;
 // $double-octave:    4;
-
-
 // Breakpoints
 $xl-screen: 1200px !default;
 $large-screen: 780px !default;
 $medium-screen: 400px !default;
 
-
-
-
-@for $i from 1 through 6 {
-  h#{$i} {
-  //mobile
-    $type-scale: $major-second;
-      font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
-
-    
-
-
-  //ipad
-       @include media ($large-screen) {
-         $type-scale: $minor-third;
-      font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
-
-      }
-  //hdi
-      @include media ($xl-screen) {
-     
-       $type-scale: $major-third;
-      font-size: modular-scale((6 - $i), $base-font-size, $type-scale);
-
-      }
-    
-  }
-}
-
-p {
-  max-width:  $large-screen;
-}
